@@ -16,6 +16,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.usernameLabel.delegate = self
         self.passwordLabel.delegate = self
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
