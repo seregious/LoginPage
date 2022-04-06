@@ -12,10 +12,13 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     
+    private var login = "Oleg"
+    private var password = "password"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.usernameLabel.delegate = self
-        self.passwordLabel.delegate = self
+        usernameLabel.delegate = self
+        passwordLabel.delegate = self
         
     }
     
@@ -30,9 +33,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func loginButton() {
-        if usernameLabel.text == "Oleg" && passwordLabel.text == "password" {
-            performSegue(withIdentifier: "loginAction", sender: nil)
-        } else {
+        if usernameLabel.text != login && passwordLabel.text != password {
             showAlert(with: "Oh no!", and: "Invalid Username or Password", action: self.passwordLabel.text = "")
         }
     }
