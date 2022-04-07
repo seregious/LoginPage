@@ -12,8 +12,9 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     
-    private var login = "Oleg"
-    private var password = "password"
+    private let user = oleg
+    private var login = oleg.userName
+    private var password = oleg.password
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,18 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loggedVC = segue.destination as? LoggedViewController else {return}
-        loggedVC.name = usernameLabel.text
+        guard let tabBarVC = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarVC.viewControllers else {return}
+        //loggedVC.name = usernameLabel.text
+        
+        for viewController in viewControllers {
+            if let loggedVC = viewController as? LoggedViewController {
+                loggedVC.user = user
+        } else if let navigationVC = viewController as? UINavigationController {
+            let profileVC = navigationVC.topViewController as! ProfileViewController
+            profileVC.user = user
+            }
+        }
     }
 
     @IBAction func loginButton() {
@@ -39,11 +50,11 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func forgotNameButton() {
-        showAlert(with: "Oh no!", and: "Your name is Oleg", action: self.usernameLabel.text = "")
+        showAlert(with: "Oh no!", and: "Your name is \(login)", action: self.usernameLabel.text = "")
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
-        showAlert(with: "Oh no!", and: "Your password is password", action: self.passwordLabel.text = "")
+        showAlert(with: "Oh no!", and: "Your password is \(password)", action: self.passwordLabel.text = "")
     }
     
     @IBAction func logOut(for segue: UIStoryboardSegue) {

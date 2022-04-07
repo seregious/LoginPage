@@ -12,11 +12,11 @@ class LoggedViewController: UIViewController {
     
     @IBOutlet weak var helloLabel: UILabel!
     
-    var name: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloLabel.text = "hello, " + name
+        helloLabel.text = "hello, " + user.profile.name
     }
     
 
