@@ -125,21 +125,21 @@
             <objects>
                 <viewController id="xXe-qW-7mY" customClass="LoggedViewController" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JEk-To-1oX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olv-8D-YaR">
-                                <rect key="frame" x="124.5" y="187" width="71" height="36"/>
+                                <rect key="frame" x="124.5" y="162.5" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kl-K7-7xg">
-                                <rect key="frame" x="124" y="248.5" width="64" height="71"/>
+                                <rect key="frame" x="121.5" y="221.5" width="69" height="76.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="🌝">
                                         <attributes>
-                                            <font key="NSFont" size="64" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="64"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -180,6 +180,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="bxO-ep-942">
+                        <color key="badgeColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="fhh-Ep-bFx"/>
@@ -197,7 +198,7 @@
             <objects>
                 <viewController id="U8q-Vq-UIW" customClass="ProfileViewController" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YH1-HJ-kBA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-oi-cnV">
@@ -264,14 +265,14 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="PnG-qL-sDJ">
-                                <rect key="frame" x="0.5" y="99" width="319" height="80"/>
+                                <rect key="frame" x="0.5" y="99" width="319" height="86"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRg-MP-xPk">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="86"/>
                                         <attributedString key="attributedText">
                                             <fragment content="🧑🏻‍💻">
                                                 <attributes>
-                                                    <font key="NSFont" size="72" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSFont" metaFont="system" size="72"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -279,7 +280,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-9O-ZHG">
-                                        <rect key="frame" x="170" y="22" width="149" height="36"/>
+                                        <rect key="frame" x="170" y="25" width="149" height="36"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Oleg Popov">
                                                 <attributes>
@@ -317,47 +318,21 @@
             </objects>
             <point key="canvasLocation" x="3780" y="77.112676056338032"/>
         </scene>
-        <!--Your hobbies-->
-        <scene sceneID="8y1-Mz-lVN">
-            <objects>
-                <viewController id="3YZ-RU-cJ9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LPJ-EV-bkt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFD-fF-cTB">
-                                <rect key="frame" x="16" y="91" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="cQ6-wd-EtC"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
-                        <constraints>
-                            <constraint firstItem="nFD-fF-cTB" firstAttribute="centerY" secondItem="LPJ-EV-bkt" secondAttribute="centerY" constant="-182.5" id="Lrf-rw-LMk"/>
-                            <constraint firstItem="nFD-fF-cTB" firstAttribute="centerX" secondItem="LPJ-EV-bkt" secondAttribute="centerX" constant="-123" id="jA0-ZB-TaP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Your hobbies" largeTitleDisplayMode="always" id="9fd-lV-UkU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GGd-FB-VcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5282" y="75"/>
-        </scene>
         <!--tabController-->
         <scene sceneID="6Nd-fS-k3Y">
             <objects>
                 <tabBarController title="tabController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Z9F-4t-DHY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wJw-Ok-p61">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wJw-Ok-p61">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="xXe-qW-7mY" kind="relationship" relationship="viewControllers" id="V7Q-hx-lSy"/>
                         <segue destination="TPv-ey-hGH" kind="relationship" relationship="viewControllers" id="AX5-h8-943"/>
-                        <segue destination="ulU-yy-u6g" kind="relationship" relationship="viewControllers" id="eez-jd-ejf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTY-0g-SKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -369,6 +344,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TPv-ey-hGH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="7br-Oz-Jx8">
+                        <color key="badgeColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -394,28 +370,8 @@
             </objects>
             <point key="canvasLocation" x="3128" y="77"/>
         </scene>
-        <!--Hobbies-->
-        <scene sceneID="81s-kf-oiy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ulU-yy-u6g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hobbies" selectedImage="flame.fill" catalog="system" id="gWS-mQ-Ihj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gxC-hA-Tdy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3YZ-RU-cJ9" kind="relationship" relationship="rootViewController" id="zKj-cs-7ta"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tfR-Hm-ufb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4568" y="75"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemMintColor">

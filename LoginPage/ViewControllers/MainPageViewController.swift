@@ -29,9 +29,8 @@ class MainPageViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarVC = segue.destination as? UITabBarController else {return}
-        guard let viewControllers = tabBarVC.viewControllers else {return}
-        //loggedVC.name = usernameLabel.text
+        let tabBarController = segue.destination as! UITabBarController
+        guard let viewControllers = tabBarController.viewControllers else {return}
         
         for viewController in viewControllers {
             if let loggedVC = viewController as? LoggedViewController {
